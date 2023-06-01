@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de redes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="tit">
+        <center>
+            <h1>SERVIÇOS DE REDE</h1>
+        </center>
+    </div>
+    <center>
+        <div class="titosi">MODELO OSI</div>
+    </center>
+    <div class="osi">
+        <p> O OSI é o primeiro modelo padrão de comunicação entre sistemas de computadores e redes, ele faz uso de sete
+            camadas para garantir essa conversa. A maioria das empresas da área de computadores e telecomunicações o
+            adotou no início dos anos 80. A partir daí, a Organização Internacional de Normalização (ISO) o transformou
+            na principal referência em 1984.</p>
+        <p>
+        <h5>7. Camada de aplicação</h5>
+        </p>
+        <p>Oferece protocolos que permitem que um software envie e receba informações significativas para os usuários.
+            Por isso, é altamente usada por itens como navegador de internet e cliente de e-mail. Alguns exemplos: HTTP,
+            FTP, POP e DNS.</p>
+        <p>
+        <h5>6. De apresentação</h5>
+        </p>
+        <p>Essa camada faz a preparação dos dados para a camada de aplicações. Ou seja, garante que as informações
+            possam ser usadas e faz toda a criptografia.</p>
+        <p>
+        <h5>5. De sessão</h5>
+        </p>
+        <p>É aqui que o modelo OSI cria os canais de comunicação entre dispositivos. Como o próprio nome diz, essa
+            camada é responsável por abrir sessões e garantir que tudo esteja funcional para que dados possam ser
+            transferidos.</p>
+        <p>
+        <h5>4. De transporte</h5>
+        </p>
+        <p>A camada de transporte pega os dados e os quebra em segmentos. Em seguida, na parte final, junta tudo
+            novamente para que as informações alcancem a camada de sessão. Ela transmite através de protocolos como o
+            TCP e UDP.</p>
+        <p>
+        <h5>3. De rede</h5>
+        </p>
+        <p>A responsabilidade dessa camada é a de transmitir dados entre um host a outro em diferentes redes. Do mesmo
+            modo, é válido apontar que outra importante função é a de cuidar dos pacotes de roteamento, selecionando o
+            caminho mais curto para isso.</p>
+        <p>
+        <h5>2. De enlace de dados</h5>
+        </p>
+        <p>É nesta parte que ocorre a conexão entre dois nós conectados fisicamente em uma rede. Essa camada do modelo
+            OSI é composta por duas partes: o controle de enlace lógico (LLC), que identifica e checa erros; e o media
+            access control (MAC), que usa endereços MAC para conectar e definir permissões nos dispositivos.</p>
+        <p>
+        <h5>1. Camada física</h5>
+        </p>
+        <p>Essa camada é uma das mais importantes do modelo OSI. Isso porque ela é responsável pela ligação de cabos
+            físicos ou sem fio entre toda a rede. Outra característica é que a transmissão dos dados brutos é feita a
+            partir daqui.</p>
+        </p>
+    </div>
+    <div class="tittcp">
+        <center>
+            <div class="titosi">MODELO TCP/IP</div>
+        </center>
+    </div>
+    <div class="osi">
+        <p>O TCP/IP é fundamental para a rede de internet. Esses dois protocolos garantem que pacotes de informações
+            cheguem a seu destino de forma correta e segura. Dessa forma, conseguimos tratar e definir os dados entre os
+            dispositivos antes de alcançarem seus destinos.</p>
+        <P>Quando falamos de TCP, nos referimos a algo que faz toda a definição de como aplicações conseguem criar
+            canais de comunicação através da rede. Também auxilia na quebra em pedaços de uma mensagem que será
+            posteriormente reconstruída antes de chegar a seu destino.</P>
+        <p>Uma boa analogia é compará-lo a alguém que recebe as peças e, em seguida, monta o quebra-cabeça por completo.
+        </p>
+        <p>Já o IP é o que define o endereço e o caminho do pacote de dados, ou seja, ele garante que as informações
+            cheguem a seu destino correto. Ele é basicamente o “carteiro”, que recebe o item e o checa para ter certeza
+            de que estará no local de seu objetivo. Tudo isso a partir do endereço IP (IP address).</p>
+        <P>Sendo assim, é correto afirmar que TCP/IP é um conjunto de protocolos e um modelo de comunicação de rede. Ele
+            serve para, principalmente, viabilizar a troca de informações entre ORIGEM e DESTINO.</P>
+    </div>
+    <center><img src="img/osiEtcp.png">
+        <div class="tittcp">
+            <center>
+                <div class="titosi">UDP</div>
+            </center>
+        </div>
+        <div class="osi">
+            <p>O protocolo UDP funciona de forma semelhante ao TCP, mas elimina todo o material de verificação de erros.
+                Toda a comunicação de ida e volta introduz latência, tornando as coisas mais lentas.</p>
+            <P>Quando um aplicativo usa UDP, os pacotes são enviados apenas para o destinatário. O remetente não espera
+                para ter certeza de que o destinatário recebeu o pacote. Se o destinatário perder alguns pacotes UDP
+                aqui e ali, o remetente não os reenviará. Perder toda essa sobrecarga significa que os dispositivos
+                podem se comunicar mais rapidamente.</P>
+            <p>UDP é usado quando a velocidade é desejável e a correção de erros não é necessária. Por exemplo, ele é
+                frequentemente usado para transmissões ao vivo e jogos online. Digamos que você esteja assistindo a um
+                stream de vídeo ao vivo, que geralmente é transmitido usando UDP em vez de TCP. O servidor apenas envia
+                um fluxo constante de pacotes UDP para os computadores que estão assistindo.</p>
+            <p>Se você perder a conexão por alguns segundos, o vídeo pode congelar ou ficar trêmulo por um momento e, em
+                seguida, pular para o trecho atual da transmissão. Se ocorrer uma pequena perda de pacote, o vídeo ou
+                áudio pode ficar distorcido por um momento, pois o vídeo continua a ser reproduzido sem os dados
+                ausentes.</p>
+        </div>
+        <center><img src="img/udp.png"></center>
+        <center>
+            <div class="titosi">DNS</div>
+        </center>
+        </div>
+        <div class="osi">
+            <p>É o DNS que permite que você digite o nome de um domínio, como tecnoblog.net na barra de endereços, em
+                vez de uma longa sequência de números difícil de decorar.</p>
+            <P>Em termos simples, o Sistema de Nomes de Domínio (DNS) é uma coleção de bancos de dados que traduz nomes
+                de host para endereços únicos de IP.</P>
+            <p>Existem duas formas de acessar um site na internet: digitando o nome de domínio que você já está
+                acostumado ou digitando o endereço IP da sua hospedagem.</p>
+            <p>É lógico que digitar a sequência de números no navegador toda vez que você quiser visitar um site não faz
+                sentido, então DNS faz o trabalho de tradução desse endereço em palavras, que formam a URL que você
+                conhece, no endereço IP do servidor.</p>
+            <P>Cada nome de domínio tem um único número IP e você não verá mais de um site com a mesma URL. Porém, nomes
+                de domínios diferentes podem encaminhar você de um site para outro. Basta que o responsável compre o
+                direito de usar todos ao mesmo tempo.</P>
+            <P>Não importa se digitar tecnoblog.net ou tecnoblog.com.br, ambos levarão você ao à versão “.net”. Isso
+                acontece porque o “.com.br” direciona para o “.net”, que leva ao IP.</P>
+        </div>
+        <center><img src="img/dns.png"></center>
+        <center>
+            <div class="titosi">DHCP</div>
+        </center>
+        </div>
+        <div class="osi">
+            <p>O protocolo DHCP (Dynamic Host Configuration Protocol), que é um provedor que faz com que as máquinas
+                dentro de determinada rede consigam obter um endereço de IP de maneira automática.</p>
+            <P>Ele é um protocolo de configuração dinâmica para uma rede de computadores. Ou seja, uma série de
+                definições de gerenciamento que são usadas para tornar o processo de configuração de dispositivos em
+                redes IP automatizados.</P>
+            <p>Sua função é atribuir automaticamente aos dispositivos conectados:</p>
+            <p>• endereço IP;</p>
+            <p> • gateway padrão;</p>
+            <p>• máscara de sub-rede;</p>
+            <p>• entre outras configurações.</p>
+        </div>
+        <center>
+            <div class="titosi">FTP</div>
+        </center>
+        </div>
+        <div class="osi">
+            <p>FTP (File Transfer Protocol) é um protocolo de rede usado para transferir arquivos entre computadores via
+                conexões TCP/IP. Ele permite que usuários autorizados enviem e recebam arquivos de servidores FTP.</p>
+            <P>Existem dois canais distintos de comunicação na hora de se estabelecer uma conexão usando o File Transfer
+                Protocol. O primeiro é o canal de comando, que é onde se inicia a instrução e a resposta. O outro é o
+                canal de dados, onde ocorre a distribuição de dados.</P>
+            <p>Se quiser baixar ou transferir um arquivo, um usuário terá que usar o protocolo para solicitar a criação
+                de mudanças no servidor. Em troca, o servidor vai garantir esse acesso. Essa seção é conhecida como
+                “modo de conexão ativa”.</p>
+            <p>Então é isso, agora você sabe que pode enviar e receber arquivos a partir de um servidor FTP. Se você for
+                um desenvolvedor de sites, é recomendado que use um cliente FTP para acessar o site que você está
+                gerenciando. Além de tudo, um programa do tipo faz com que fique mais fácil de criar e remover
+                diretórios, assim como ler um grande número de arquivos no servidor.</p>
+        </div>
+        <div class="titosi">HTTP/HTTPS</div>
+    </center>
+    </div>
+    <div class="osi">
+        <p>Toda vez que você acessa uma página da web, o navegador que você está usando envia uma série de solicitações
+            ao servidor no qual o site em questão está hospedado. A partir daí, é estabelecido um protocolo de
+            comunicação entre as duas partes: o navegador (você) e o servidor (o site).</p>
+        <p>Esse protocolo, que permite que dados sejam trocados e a página desejada seja carregada, é o famoso HTTP, ou
+            Hypertext Transfer Protocol. O problema do HTTP avulso, sem o “s” de segurança, é exatamente esse: ele não
+            oferece a camada necessária para proteger suas informações.</p>
+        <P>Isso porque o HTTP avulso é um protocolo de comunicação aberto, no qual os dados são transferidos entre o
+            navegador e o servidor em formato de texto simples, sem qualquer proteção. Assim, qualquer invasor que
+            consiga se instalar em algum ponto dessa transferência poderá capturar seus dados sem maiores dificuldades.
+            Isso poderia acontecer no caso de haver um malware ou um usuário mal-intencionado na sua rede Wi-Fi, por
+            exemplo.</P>
+        <p>É aí que entra o HTTPS: ao contrário de um protocolo aberto, como o HTTP, as transferências de dados do HTTPS
+            são criptografadas. Ou seja, os dados trocados entre o navegador e o servidor são protegidos, embaralhados e
+            decodificados somente por uma chave que só existe nas duas pontas do processo.</p>
+        <p>Com isso, um possível invasor terá muito mais dificuldade para capturar os seus dados, uma vez que será
+            impossível decodificá-los sem a chave de criptografia.</p>
+    </div>
+    <center>
+        <div class="titosi">WEB SERVER</div>
+    </center>
+    </div>
+    <div class="osi">
+        <p>De maneira simplificada, um servidor web é um computador responsável pelo armazenamento, processamento e
+            entrega dos arquivos dos sites para os navegadores.</p>
+        <p>Através deste processo, os servidores web carregam e entregam a página solicitada para o navegador do usuário
+            — como o Google Chrome, por exemplo. Os servidores web também utilizam o Simple Mail Transfer Protocol
+            (SMTP) e File Transfer Protocol (FTP) para processar arquivos para emails e armazenamento.
+            Para processar as requisições dos clientes web, os servidores web seguem algumas etapas:</p>
+        <P>1. Quando um usuário web deseja carregar o conteúdo de um site, seu navegador solicita o acesso através da
+            internet. Isso é conhecido como uma solicitação HTTP. O navegador procura pelo endereço de IP do site
+            solicitado traduzindo a URL das páginas web através do Sistema de Nomes de Domínio (DNS) ou verificando seu
+            cache. Esse processo localiza o servidor web onde os arquivos do site estão hospedados.</p>
+        <P> 2. O servidor web recebe a requisição HTTP e a processa através do seu servidor HTTP. Assim que o servidor
+            HTTP aceita a requisição, ele procura pelos dados relevantes em seus arquivos.</p>
+        <P> 3. Depois disso, o servidor web retorna os arquivos do site para o navegador que enviou a requisição, e
+            então o usuário web consegue ver o conteúdo do site.</p>
+        <p><strong>Web Estático vs Dinâmico:</strong></p>
+        <p>Os servidores web podem exibir conteúdo estático ou dinâmico. Um servidor web estático consiste em um
+            computador e um software de HTTP. </p>
+        <p>Os servidores web estáticos enviam os arquivos de um site de volta para o navegador sem mudança alguma. </p>
+        <p>Um servidor web dinâmico basicamente atualiza os arquivos hospedados antes de entregá-los através de um
+            servidor HTTP. Isso possibilita que ele gera e envie conteúdo dinâmico para o navegador.
+        </p>
+    </div>
+    <center>
+        <div class="titosi">AULA - APRESENTAÇÕES</div>
+    </center>
+    </div>
+    <div class="osi">
+        <p>Gostei bastante do projeto! Minha parte favorita foi criar o site, mas também gostei da parte lógica do Packet Tracer, apesar de achar um pouco complicada, mas depois peguei o jeito.</p>
+        <P>Na hora de apresentar não fiquei muito nervosa e foi bem tranquilo. Eu estava com algumas dúvidas no início da aula, mas conforme as apresentações decorreram, todas as minhas dúvidas foram cessadas.</P>
+    </div>
+    <center>
+        <img src="img/serviçosderedeprint.png">
+    </center>
+</body>
+
+</html>
